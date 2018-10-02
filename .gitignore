@@ -1,0 +1,11 @@
+testTinyXML/json/jsoncpp-1.8.4/build
+*.zip
+*.d
+*.o
+*.rar
+*.exe
+*.a
+cmake-build-debug/log/
+cmake-build-debug/CMakeFiles/
+cmake-build-debug/*.cbp
+cmake-build-debug/testTinyXML

@@ -1,0 +1,18 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<conf>
+    <redis>
+        <auth pwd="d.redis.server"/>
+        <sentinel host="13.27.23.78" port="26379"/>
+   </redis>
+   <sn>
+        <smcenter host="183.36.121.219" port="9001"/>
+        <smgr timer="1000"/>
+   </sn>
+    <server>
+         <listen port="9001"/>
+         <testmodel enable="1"/>
+    </server>
+    <localtest>
+        <smcenter host="12.5.3.36" port="9001"/>
+    </localtest>
+</conf>

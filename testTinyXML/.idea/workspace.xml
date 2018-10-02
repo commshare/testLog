@@ -3,6 +3,11 @@
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
       <config projectName="testTinyXML" targetName="testTinyXML" />
+      <config projectName="testTinyXML" targetName="jsoncpp_check" />
+      <config projectName="testTinyXML" targetName="jsoncpp_readerwriter_tests" />
+      <config projectName="testTinyXML" targetName="jsoncpp_test" />
+      <config projectName="testTinyXML" targetName="jsontestrunner_exe" />
+      <config projectName="testTinyXML" targetName="jsoncpp_lib_static" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -12,14 +17,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="154cbad4-80ef-4d16-b9e7-c51777f38df8" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinystr.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinystr.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinystr.h" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinystr.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxml.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxml.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxml.h" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxml.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxmlerror.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxmlerror.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxmlparser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxmlparser.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/build_jsoncpp_1.8.4.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/read_save.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testReadSave/rwjson.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testReadSave/rwjson.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReadSave/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReadSave/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testReadSave/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReadSave/reader.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/testReadSave/readsave.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testReadSave/reader.h" beforeDir="false" afterPath="$PROJECT_DIR$/testReadSave/readsave.h" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,39 +45,48 @@
     <session id="-2035491790">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="conf" value="2" />
-          <entry key="cpp" value="1" />
-          <entry key="h" value="1" />
-          <entry key="xml" value="2" />
+          <entry key="cpp" value="7" />
+          <entry key="h" value="4" />
+          <entry key="md" value="1" />
+          <entry key="txt" value="9" />
+          <entry key="xml" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="ObjectiveC" value="2" />
-          <entry key="PLAIN_TEXT" value="2" />
-          <entry key="XML" value="2" />
+          <entry key="CMakeLists.txt" value="9" />
+          <entry key="ObjectiveC" value="11" />
+          <entry key="PLAIN_TEXT" value="3" />
+          <entry key="XML" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="conf" value="47" />
-          <entry key="cpp" value="715" />
-          <entry key="txt" value="1" />
-          <entry key="xml" value="5" />
+          <entry key="cpp" value="2060" />
+          <entry key="h" value="51" />
+          <entry key="md" value="4" />
+          <entry key="txt" value="114" />
+          <entry key="xml" value="87" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CMakeLists.txt" value="1" />
-          <entry key="ObjectiveC" value="715" />
-          <entry key="PLAIN_TEXT" value="47" />
-          <entry key="XML" value="5" />
+          <entry key="CMakeLists.txt" value="114" />
+          <entry key="ObjectiveC" value="2111" />
+          <entry key="PLAIN_TEXT" value="51" />
+          <entry key="XML" value="87" />
         </counts>
       </usages-collector>
     </session>
@@ -73,102 +94,42 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testReadSave/rwjson.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="748">
+              <caret line="44" selection-start-line="44" selection-end-line="44" />
+              <folding>
+                <element signature="e#38#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testReadSave/reader.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-end-line="60" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/logger.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logger/log4z.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="836" column="4" selection-start-line="836" selection-start-column="4" selection-end-line="836" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logger/logger.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logger/logger.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-              <folding>
-                <element signature="e#159#200#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="306">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cmake-build-debug/person.xml">
+        <entry file="file://$PROJECT_DIR$/docs/build_jsoncpp_1.8.4.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/logger/log4z.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="413" column="12" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testReadSave/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testReadSave/reader.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="289">
+              <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LOGZ</find>
+      <find>containsNewLine</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -180,21 +141,28 @@
         <option value="$PROJECT_DIR$/cmake-build-debug/todo.xml" />
         <option value="$PROJECT_DIR$/logger/logger.cpp" />
         <option value="$PROJECT_DIR$/logger/logger.h" />
-        <option value="$PROJECT_DIR$/testReadSave/reader.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/testReadSave/main.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/logger.conf" />
-        <option value="$PROJECT_DIR$/testReadSave/reader.cpp" />
         <option value="$PROJECT_DIR$/cmake-build-debug/person.xml" />
+        <option value="$PROJECT_DIR$/docs/read_save.md" />
+        <option value="$PROJECT_DIR$/testReadSave/reader.cpp" />
+        <option value="$PROJECT_DIR$/testReadSave/reader.h" />
+        <option value="$PROJECT_DIR$/testReadSave/saver.cpp" />
+        <option value="$PROJECT_DIR$/testReadSave/readsave.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/conf.xml" />
+        <option value="$PROJECT_DIR$/testReadSave/readsave.cpp" />
+        <option value="$PROJECT_DIR$/testReadSave/rwjson.cpp" />
+        <option value="$PROJECT_DIR$/testReadSave/main.cpp" />
+        <option value="$PROJECT_DIR$/testReadSave/rwjson.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/docs/build_jsoncpp_1.8.4.cpp" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="156" />
-    <option name="y" value="275" />
-    <option name="width" value="1684" />
-    <option name="height" value="907" />
+    <option name="y" value="200" />
+    <option name="width" value="1920" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -202,7 +170,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,27 +180,18 @@
             <path>
               <item name="testTinyXML" type="b2602c69:ProjectViewProjectNode" />
               <item name="testTinyXML" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="testTinyXML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testTinyXML" type="462c0819:PsiDirectoryNode" />
-              <item name="logger" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="testTinyXML" type="b2602c69:ProjectViewProjectNode" />
               <item name="testTinyXML" type="462c0819:PsiDirectoryNode" />
               <item name="testReadSave" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="testTinyXML" type="b2602c69:ProjectViewProjectNode" />
-              <item name="testTinyXML" type="462c0819:PsiDirectoryNode" />
-              <item name="xmlconfigure" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -243,6 +201,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/json" />
       <recent name="$PROJECT_DIR$/cmake-build-debug" />
       <recent name="W:\ttttsdk\testLog\testTinyXML\logger" />
       <recent name="W:\ttttsdk\testLog\testTinyXML\testReadSave" />
@@ -266,7 +225,32 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testTinyXML" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="person.xml" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="testTinyXML" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testTinyXML" RUN_TARGET_NAME="testTinyXML">
+    <configuration name="jsoncpp_check" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="jsoncpp_check" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsoncpp_lib_static" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="jsoncpp_lib_static" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsoncpp_readerwriter_tests" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="jsoncpp_readerwriter_tests" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsoncpp_test" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="jsoncpp_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testTinyXML" RUN_TARGET_NAME="jsoncpp_test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jsontestrunner_exe" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="jsontestrunner_exe" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testTinyXML" RUN_TARGET_NAME="jsontestrunner_exe">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testTinyXML" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="person.xml save.xml conf.xml" PASS_PARENT_ENVS_2="true" PROJECT_NAME="testTinyXML" TARGET_NAME="testTinyXML" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="testTinyXML" RUN_TARGET_NAME="testTinyXML">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -274,6 +258,11 @@
     <list>
       <item itemvalue="Application.Build All" />
       <item itemvalue="Application.testTinyXML" />
+      <item itemvalue="Application.jsoncpp_check" />
+      <item itemvalue="Application.jsoncpp_readerwriter_tests" />
+      <item itemvalue="Application.jsontestrunner_exe" />
+      <item itemvalue="Application.jsoncpp_lib_static" />
+      <item itemvalue="Application.jsoncpp_test" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -285,12 +274,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1538284260810</updated>
-      <workItem from="1538284264422" duration="2762000" />
+      <workItem from="1538284264422" duration="5708000" />
+      <workItem from="1538314516424" duration="80000" />
+      <workItem from="1538367713077" duration="6241000" />
+      <workItem from="1538384402797" duration="28000" />
+      <workItem from="1538457800551" duration="3924000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2762000" />
+    <option name="totallyTimeSpent" value="15981000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -302,29 +295,29 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="156" y="275" width="1684" height="907" extended-state="0" />
+    <frame x="0" y="200" width="1920" height="1026" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25091353" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22949947" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32828283" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32821077" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3989899" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32918552" />
-      <window_info anchor="bottom" id="CMake" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32918552" />
+      <window_info anchor="bottom" id="CMake" order="7" weight="0.32930845" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.28540066" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32828283" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32821077" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -360,13 +353,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testReadSave/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logger/logger.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -378,68 +364,181 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="15" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          <folding>
-            <element signature="e#159#200#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testReadSave/reader.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="26" lean-forward="true" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testReadSave/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="5" column="35" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/saver.cpp" />
     <entry file="file://$PROJECT_DIR$/logger/log4z.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
+        <state relative-caret-position="14212">
           <caret line="836" column="4" selection-start-line="836" selection-start-column="4" selection-end-line="836" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cmake-build-debug/logger.conf">
+    <entry file="file://$PROJECT_DIR$/testReadSave/readsave.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logger/log4z.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="413" column="12" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testReadSave/reader.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="59" column="33" lean-forward="true" selection-start-line="59" selection-end-line="60" />
+        <state relative-caret-position="278">
+          <caret line="257" column="7" selection-start-line="244" selection-start-column="6" selection-end-line="257" selection-end-column="7" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/xmlconfigure/tinyxml/tinyxml.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28339">
+          <caret line="1667" column="25" selection-start-line="1667" selection-start-column="25" selection-end-line="1667" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/logger.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="15" selection-start-line="19" selection-start-column="15" selection-end-line="19" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cmake-build-debug/person.xml">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/read_save.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="69" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logger/log4z.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7021">
+          <caret line="413" column="12" selection-start-line="413" selection-start-column="8" selection-end-line="413" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/conf.xml">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/save.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="20" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/readsave.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp/json/json.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" selection-start-line="7" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/rwjson.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/src/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/src/lib_json/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="96" column="28" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/src/lib_json/json_value.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="1217" selection-start-line="1217" selection-end-line="1217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/include/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/src/lib_json/json_reader.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="85" column="28" selection-start-line="85" selection-start-column="13" selection-end-line="85" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp_offical/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2130">
+          <caret line="3" column="11" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp/json/value.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1317">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/json/jsoncpp-1.8.4/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-102" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testReadSave/rwjson.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+          <folding>
+            <element signature="e#38#57#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/build_jsoncpp_1.8.4.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="59" lean-forward="true" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
         </state>
       </provider>
     </entry>

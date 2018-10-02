@@ -1,0 +1,7 @@
+<root>
+    <Element attribute="1932" />
+    <E2 attribute2="2" attribute3="3">
+        <Element3 attribute4="4" />
+        <zhongguo />
+    </E2>
+</root>

@@ -23,6 +23,9 @@ SUFFIXES =
 .SUFFIXES: .hpux_make_needs_suffix_list
 
 
+# Produce verbose output by default.
+VERBOSE = 1
+
 # Suppress display of executed commands.
 $(VERBOSE).SILENT:
 
@@ -56,16 +59,29 @@ CMAKE_BINARY_DIR = /home/zhangbin/stream/ttttsdk/testLog/testTinyXML/cmake-build
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
 
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
 
-.PHONY : rebuild_cache/fast
+# Special rule for the target install/local
+install/local: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local
+
+# Special rule for the target install/local
+install/local/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+.PHONY : install/local/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -77,6 +93,39 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/home/zhangbin/clion/clion-2018.1.5/bin/cmake/linux/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -122,6 +171,71 @@ testTinyXML: cmake_check_build_system
 testTinyXML/fast:
 	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/build
 .PHONY : testTinyXML/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_lib_static
+
+# Build rule for target.
+jsoncpp_lib_static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_lib_static
+.PHONY : jsoncpp_lib_static
+
+# fast build rule for target.
+jsoncpp_lib_static/fast:
+	$(MAKE) -f json/jsoncpp-1.8.4/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build.make json/jsoncpp-1.8.4/src/lib_json/CMakeFiles/jsoncpp_lib_static.dir/build
+.PHONY : jsoncpp_lib_static/fast
+
+#=============================================================================
+# Target rules for targets named jsontestrunner_exe
+
+# Build rule for target.
+jsontestrunner_exe: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsontestrunner_exe
+.PHONY : jsontestrunner_exe
+
+# fast build rule for target.
+jsontestrunner_exe/fast:
+	$(MAKE) -f json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/build.make json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsontestrunner_exe.dir/build
+.PHONY : jsontestrunner_exe/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_readerwriter_tests
+
+# Build rule for target.
+jsoncpp_readerwriter_tests: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_readerwriter_tests
+.PHONY : jsoncpp_readerwriter_tests
+
+# fast build rule for target.
+jsoncpp_readerwriter_tests/fast:
+	$(MAKE) -f json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.dir/build.make json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsoncpp_readerwriter_tests.dir/build
+.PHONY : jsoncpp_readerwriter_tests/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_check
+
+# Build rule for target.
+jsoncpp_check: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_check
+.PHONY : jsoncpp_check
+
+# fast build rule for target.
+jsoncpp_check/fast:
+	$(MAKE) -f json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsoncpp_check.dir/build.make json/jsoncpp-1.8.4/src/jsontestrunner/CMakeFiles/jsoncpp_check.dir/build
+.PHONY : jsoncpp_check/fast
+
+#=============================================================================
+# Target rules for targets named jsoncpp_test
+
+# Build rule for target.
+jsoncpp_test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 jsoncpp_test
+.PHONY : jsoncpp_test
+
+# fast build rule for target.
+jsoncpp_test/fast:
+	$(MAKE) -f json/jsoncpp-1.8.4/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/build.make json/jsoncpp-1.8.4/src/test_lib_json/CMakeFiles/jsoncpp_test.dir/build
+.PHONY : jsoncpp_test/fast
 
 logger/log4z.o: logger/log4z.cpp.o
 
@@ -204,32 +318,59 @@ testReadSave/main.cpp.s:
 	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/main.cpp.s
 .PHONY : testReadSave/main.cpp.s
 
-testReadSave/reader.o: testReadSave/reader.cpp.o
+testReadSave/readsave.o: testReadSave/readsave.cpp.o
 
-.PHONY : testReadSave/reader.o
+.PHONY : testReadSave/readsave.o
 
 # target to build an object file
-testReadSave/reader.cpp.o:
-	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/reader.cpp.o
-.PHONY : testReadSave/reader.cpp.o
+testReadSave/readsave.cpp.o:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/readsave.cpp.o
+.PHONY : testReadSave/readsave.cpp.o
 
-testReadSave/reader.i: testReadSave/reader.cpp.i
+testReadSave/readsave.i: testReadSave/readsave.cpp.i
 
-.PHONY : testReadSave/reader.i
+.PHONY : testReadSave/readsave.i
 
 # target to preprocess a source file
-testReadSave/reader.cpp.i:
-	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/reader.cpp.i
-.PHONY : testReadSave/reader.cpp.i
+testReadSave/readsave.cpp.i:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/readsave.cpp.i
+.PHONY : testReadSave/readsave.cpp.i
 
-testReadSave/reader.s: testReadSave/reader.cpp.s
+testReadSave/readsave.s: testReadSave/readsave.cpp.s
 
-.PHONY : testReadSave/reader.s
+.PHONY : testReadSave/readsave.s
 
 # target to generate assembly for a file
-testReadSave/reader.cpp.s:
-	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/reader.cpp.s
-.PHONY : testReadSave/reader.cpp.s
+testReadSave/readsave.cpp.s:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/readsave.cpp.s
+.PHONY : testReadSave/readsave.cpp.s
+
+testReadSave/rwjson.o: testReadSave/rwjson.cpp.o
+
+.PHONY : testReadSave/rwjson.o
+
+# target to build an object file
+testReadSave/rwjson.cpp.o:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/rwjson.cpp.o
+.PHONY : testReadSave/rwjson.cpp.o
+
+testReadSave/rwjson.i: testReadSave/rwjson.cpp.i
+
+.PHONY : testReadSave/rwjson.i
+
+# target to preprocess a source file
+testReadSave/rwjson.cpp.i:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/rwjson.cpp.i
+.PHONY : testReadSave/rwjson.cpp.i
+
+testReadSave/rwjson.s: testReadSave/rwjson.cpp.s
+
+.PHONY : testReadSave/rwjson.s
+
+# target to generate assembly for a file
+testReadSave/rwjson.cpp.s:
+	$(MAKE) -f CMakeFiles/testTinyXML.dir/build.make CMakeFiles/testTinyXML.dir/testReadSave/rwjson.cpp.s
+.PHONY : testReadSave/rwjson.cpp.s
 
 xmlconfigure/tinyxml/tinystr.o: xmlconfigure/tinyxml/tinystr.cpp.o
 
@@ -345,9 +486,18 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
+	@echo "... install/strip"
+	@echo "... install/local"
 	@echo "... edit_cache"
 	@echo "... testTinyXML"
+	@echo "... rebuild_cache"
+	@echo "... install"
+	@echo "... list_install_components"
+	@echo "... jsoncpp_lib_static"
+	@echo "... jsontestrunner_exe"
+	@echo "... jsoncpp_readerwriter_tests"
+	@echo "... jsoncpp_check"
+	@echo "... jsoncpp_test"
 	@echo "... logger/log4z.o"
 	@echo "... logger/log4z.i"
 	@echo "... logger/log4z.s"
@@ -357,9 +507,12 @@ help:
 	@echo "... testReadSave/main.o"
 	@echo "... testReadSave/main.i"
 	@echo "... testReadSave/main.s"
-	@echo "... testReadSave/reader.o"
-	@echo "... testReadSave/reader.i"
-	@echo "... testReadSave/reader.s"
+	@echo "... testReadSave/readsave.o"
+	@echo "... testReadSave/readsave.i"
+	@echo "... testReadSave/readsave.s"
+	@echo "... testReadSave/rwjson.o"
+	@echo "... testReadSave/rwjson.i"
+	@echo "... testReadSave/rwjson.s"
 	@echo "... xmlconfigure/tinyxml/tinystr.o"
 	@echo "... xmlconfigure/tinyxml/tinystr.i"
 	@echo "... xmlconfigure/tinyxml/tinystr.s"
