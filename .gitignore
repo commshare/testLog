@@ -1,4 +1,5 @@
-testTinyXML/json/jsoncpp-1.8.4/build
+testTinyXML/cmake-build-debug/json/
+testTinyXML/json/jsoncpp-1.8.4/build/
 *.zip
 *.d
 *.o
